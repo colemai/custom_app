@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Image source={require('./images/logo.png')} style={styles.logo}/>
+      <Text>IBS</Text>
     </View>
   );
 }
@@ -12,8 +14,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#51B6F5',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  logo: {
+    width: 400,
+    height: 400,
+  },
+  sub_headline: {
+    flex:1
+  }
 });
